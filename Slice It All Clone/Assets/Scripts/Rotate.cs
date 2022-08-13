@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using DG.Tweening;
 
 public class Rotate : MonoBehaviour
 {
@@ -79,7 +78,7 @@ public class Rotate : MonoBehaviour
     private void Spin()
     {
         
-        rb.AddTorque(Vector3.right * 90000000, ForceMode.Impulse);
+        rb.AddTorque(Vector3.right * 90000000, ForceMode.Acceleration);
     }
     
     private void DeactiveGroundTag()

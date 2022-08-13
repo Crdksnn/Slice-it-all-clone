@@ -50,10 +50,7 @@ public class Slice : MonoBehaviour
     {
 
         if (other.gameObject.tag == "GroundActive")
-        {
-           
             rotate.CollideWithGround();
-        }
     }
     public SlicedHull Cut(GameObject obj, Material mat = null)
     {
